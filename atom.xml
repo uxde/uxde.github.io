@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>uxde</title>
+  <subtitle>没有一种光不可接近 请出发</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https//uxde.github.io/"/>
+  <updated>2017-03-25T08:10:34.000Z</updated>
+  <id>https//uxde.github.io/</id>
+  
+  <author>
+    <name>tu</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hello world</title>
+    <link href="https//uxde.github.io/2017/03/25/hello%20world/"/>
+    <id>https//uxde.github.io/2017/03/25/hello world/</id>
+    <published>2017-03-25T08:09:52.000Z</published>
+    <updated>2017-03-25T08:10:34.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>hello world</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;hello world&lt;/p&gt;
+
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
