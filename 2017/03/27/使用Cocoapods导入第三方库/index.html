@@ -45,7 +45,7 @@ pod install
 				<h1 class="site-name"><a href="/" title="uxde">uxde</a></h1>
 				<h2 class="blog-motto">没有一种光不可接近 请出发</h2>
 			</div>
-			<div class="navbar"><a class="navbutton navmobile" href="#" title="Menu">
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
 			</a></div>
 			<nav class="animated">
 				<ul>
@@ -58,7 +58,7 @@ pod install
 					
 					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
 						<label>Search</label>
-						<input type="text" id="search" name="q" autocomplete="off" maxlength="20" placeholder="Search" />
+						<input type="text" id="search" name="q" autocomplete="off" maxlength="20" placeholder="搜索" />
 						<input type="hidden" name="q" value="site:https//uxde.github.io">
 					</form>
 					
@@ -82,7 +82,7 @@ pod install
     </p>
   <p class="article-time">
     <time datetime="2017-03-27T11:54:53.000Z" itemprop="datePublished">2017-03-27</time>
-    Updated:<time datetime="2017-03-27T13:02:52.000Z" itemprop="dateModified">2017-03-27</time>
+    更新日期:<time datetime="2017-03-27T13:04:03.000Z" itemprop="dateModified">2017-03-27</time>
     
   </p>
 </header>
@@ -90,7 +90,7 @@ pod install
 		
 		
 		<div id="toc" class="toc-article">
-			<strong class="toc-title">Contents</strong>
+			<strong class="toc-title">文章目录</strong>
 		<ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#进入到工程的根目录中，创建空白的Podfile文件"><span class="toc-number">1.</span> <span class="toc-text">进入到工程的根目录中，创建空白的Podfile文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#pod-install-和-pod-update"><span class="toc-number">2.</span> <span class="toc-text">pod install 和 pod update</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#pod-install"><span class="toc-number">2.1.</span> <span class="toc-text">pod install</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#pod-updata"><span class="toc-number">2.2.</span> <span class="toc-text">pod updata</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Podfile-lock"><span class="toc-number">3.</span> <span class="toc-text">Podfile.lock</span></a></li></ol>
 		</div>
 		
@@ -104,7 +104,8 @@ pod install
 <blockquote>
 <p>pod init 可以直接创建具有模板的Podfile文件</p>
 </blockquote>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line">target 'test3' do</div><div class="line"># Comment the next line if you're not using Swift and don't want to use dynamic frameworks</div><div class="line">use_frameworks!</div><div class="line"></div><div class="line"># Pods for test3</div><div class="line"></div><div class="line">pod 'SnapKit' , '~&gt; 3.0.0'</div><div class="line">pod 'Alamofire' , '~&gt; 4.0'</div><div class="line">pod 'SwiftyJSON' , '~&gt; 3.0'</div><div class="line"></div><div class="line"></div><div class="line">target 'test3Tests' do</div><div class="line">inherit! :search_paths</div><div class="line"># Pods for testing</div><div class="line">end</div><div class="line"></div><div class="line">target 'test3UITests' do</div><div class="line">inherit! :search_paths</div><div class="line"># Pods for testing</div><div class="line">end</div><div class="line"></div><div class="line">end</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line">target &apos;test3&apos; do</div><div class="line"># Comment the next line if you&apos;re not using Swift and don&apos;t want to use dynamic frameworks</div><div class="line">use_frameworks!</div><div class="line"></div><div class="line"># Pods for test3</div><div class="line"></div><div class="line">pod &apos;SnapKit&apos; , &apos;~&gt; 3.0.0&apos;</div><div class="line">pod &apos;Alamofire&apos; , &apos;~&gt; 4.0&apos;</div><div class="line">pod &apos;SwiftyJSON&apos; , &apos;~&gt; 3.0&apos;</div><div class="line"></div><div class="line"></div><div class="line">target &apos;test3Tests&apos; do</div><div class="line">inherit! :search_paths</div><div class="line"># Pods for testing</div><div class="line">end</div><div class="line"></div><div class="line">target &apos;test3UITests&apos; do</div><div class="line">inherit! :search_paths</div><div class="line"># Pods for testing</div><div class="line">end</div><div class="line"></div><div class="line">end</div></pre></td></tr></table></figure>
+<hr>
 <h3 id="pod-install-和-pod-update"><a href="#pod-install-和-pod-update" class="headerlink" title="pod install 和 pod update"></a>pod install 和 pod update</h3><h4 id="pod-install"><a href="#pod-install" class="headerlink" title="pod install"></a>pod install</h4><ul>
 <li>导入新库，或者移除原有的库。还是先编辑 Podfile 文件，再执行 install 命令。每次pod install被执行，都会下载和安装新的pods。被安装的pods的版本都会写入到Podfile.lock文件中。这个文件会一直跟踪已安装的每一个pods的版本号，并且锁定这些版本号。</li>
 <li>当你执行pod install，它只会解决那些没有在Podfile.lock文件中列出来的pods的依赖。<br>  -对于Podfile.lock中列出的pods，只会下载Podfile.lock明确记录的版本，而不会去查看是否有新的版本。<br>  -对于没有在Podfile.lock中列出的pods，会去匹配Podfile文件中描述的版本，如pod ‘AFNetworking’, ‘~&gt; 3.0’。</li>
@@ -149,15 +150,15 @@ pod install
 
 	
 </div>  
-      <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
 
   <div id="toc" class="toc-aside">
-  <strong class="toc-title">Contents</strong>
+  <strong class="toc-title">文章目录</strong>
   <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#进入到工程的根目录中，创建空白的Podfile文件"><span class="toc-number">1.</span> <span class="toc-text">进入到工程的根目录中，创建空白的Podfile文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#pod-install-和-pod-update"><span class="toc-number">2.</span> <span class="toc-text">pod install 和 pod update</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#pod-install"><span class="toc-number">2.1.</span> <span class="toc-text">pod install</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#pod-updata"><span class="toc-number">2.2.</span> <span class="toc-text">pod updata</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Podfile-lock"><span class="toc-number">3.</span> <span class="toc-text">Podfile.lock</span></a></li></ol>
   </div>
 
 <div id="asidepart">
-<div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
 <aside class="clearfix">
 
   
@@ -165,7 +166,7 @@ pod install
   
 
   <div class="rsspart">
-	<a href="/atom.xml" target="_blank" title="rss">RSS</a>
+	<a href="/atom.xml" target="_blank" title="rss">RSS 订阅</a>
 </div>
 
 </aside>
