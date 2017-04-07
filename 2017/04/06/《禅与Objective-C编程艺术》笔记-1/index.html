@@ -77,7 +77,7 @@
     </p>
   <p class="article-time">
     <time datetime="2017-04-06T15:42:57.000Z" itemprop="datePublished">2017-04-06</time>
-    Updated:<time datetime="2017-04-06T15:47:44.000Z" itemprop="dateModified">2017-04-06</time>
+    Updated:<time datetime="2017-04-07T10:05:31.000Z" itemprop="dateModified">2017-04-07</time>
     
   </p>
 </header>
@@ -152,10 +152,11 @@
 <li>使用 setter 会遵守定义的内存管理语义(strong, weak, copy etc…) ，这个在 ARC 之前就是相关的内容。举个例子，copy 属性定义了每个时候你用 setter 并且传送数据的时候，它会复制数据而不用额外的操作。</li>
 <li>KVO 通知(willChangeValueForKey, didChangeValueForKey) 会被自动执行。</li>
 <li>更容易debug：你可以设置一个断点在属性声明上并且断点会在每次 getter / setter 方法调用的时候执行，或者你可以在自己的自定义 setter/getter 设置断点。</li>
-<li><p>允许在一个单独的地方为设置值添加额外的逻辑。<br>你应该倾向于用 getter：</p>
-</li>
-<li><p>它是对未来的变化有扩展能力的（比如，属性是自动生成的）。</p>
-</li>
+<li>允许在一个单独的地方为设置值添加额外的逻辑。</li>
+</ul>
+<p>你应该倾向于用 getter：</p>
+<ul>
+<li>它是对未来的变化有扩展能力的（比如，属性是自动生成的）。</li>
 <li>它允许子类化。</li>
 <li>更简单的debug（比如，允许拿出一个断点在 getter 方法里面，并且看谁访问了特别的 getter</li>
 <li>它让意图更加清晰和明确：通过访问 ivar _anIvar 你可以明确的访问 self-&gt;_anIvar.这可能导致问题。在 block 里面访问 ivar （你捕捉并且 retain 了 self，即使你没有明确的看到 self 关键词）。</li>
